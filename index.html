@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="A simple omelette recipe including ingredients, instructions, and nutritional information."
+   >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+   >
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- link to 'Young Serif' and 'Outfit' fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+   >
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <article class="recipe">
+        <header class="recipe__header">
+          <div>
+            <img
+              src="images/image-omelette.jpeg"
+              alt="A vegetable-filled omelette on a plate"
+              class="recipe__img"
+           >
+          </div>
+          <h1>Simple Omelette Recipe</h1>
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+        </header>
+        <div class="recipe__content">
+          <article class="recipe__section" id="time">
+            <h2 class="recipe__section-heading recipe__section-heading--secondary">
+              Preparation time
+            </h2>
+            <ul class="recipe__list">
+              <li class="recipe__list-item recipe__list-item--secondary">
+                <span class="list-style list-style__point list-style__point--secondary" aria-hidden="true">&bull;</span>
+                <p><span class="bold">Total</span>: Approximately 10 minutes</p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--secondary">
+                <span class="list-style list-style__point list-style__point--secondary" aria-hidden="true">&bull;</span>
+                <p><span class="bold">Preparation</span>: 5 minutes</p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--secondary">
+                <span class="list-style list-style__point list-style__point--secondary" aria-hidden="true">&bull;</span>
+                <p><span class="bold">Cooking</span>: 5 minutes</p>
+              </li>
+            </ul>
+          </article>
+          <article class="recipe__section" id="ingredients">
+            <h2 class="recipe__section-heading">Ingredients</h2>
+            <ul class="recipe__list">
+              <li class="recipe__list-item">
+                <span class="list-style list-style__point" aria-hidden="true">&bull;</span>
+                <p>2-3 large eggs</p>
+              </li>
+              <li class="recipe__list-item">
+                <span class="list-style list-style__point" aria-hidden="true">&bull;</span>
+                <p>Salt, to taste</p>
+              </li>
+              <li class="recipe__list-item">
+                <span class="list-style list-style__point" aria-hidden="true">&bull;</span>
+                <p>Pepper, to taste</p>
+              </li>
+              <li class="recipe__list-item">
+                <span class="list-style list-style__point" aria-hidden="true">&bull;</span>
+                <p>1 tablespoon of butter or oil</p>
+              </li>
+              <li class="recipe__list-item">
+                <span class="list-style list-style__point" aria-hidden="true">&bull;</span>
+                <p>
+                  Optional fillings: cheese, diced vegetables, cooked meats,
+                  herbs
+                </p>
+              </li>
+            </ul>
+          </article>
+          <hr>
+          <article class="recipe__section" id="instructions">
+            <h2 class="recipe__section-heading">Instructions</h2>
+            <ol class="recipe__list recipe__list--numbered">
+              <li class="recipe__list-item recipe__list-item--numbered">
+                <span class="bold list-style list-style__number" aria-hidden="true">1.</span>
+                <p>
+                  <span class="bold">Beat the eggs</span>: In a bowl, beat the
+                  eggs with a pinch of salt and pepper until they are well
+                  mixed. You can add a tablespoon of water or milk for a
+                  fluffier texture.
+                </p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--numbered">
+                <span class="bold list-style list-style__number" aria-hidden="true">2.</span>
+                <p>
+                  <span class="bold">Heat the pan</span>: Place a non-stick
+                  frying pan over medium heat and add butter or oil.
+                </p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--numbered">
+                <span class="bold list-style list-style__number" aria-hidden="true">3.</span>
+                <p>
+                  <span class="bold">Cook the omelette</span>: Once the butter
+                  is melted and bubbling, pour in the eggs. Tilt the pan to
+                  ensure the eggs evenly coat the surface.
+                </p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--numbered">
+                <span class="bold list-style list-style__number" aria-hidden="true">4.</span>
+                <p>
+                  <span class="bold">Add fillings (optional)</span>: When the
+                  eggs begin to set at the edges but are still slightly runny in
+                  the middle, sprinkle your chosen fillings over one half of the
+                  omelette.
+                </p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--numbered">
+                <span class="bold list-style list-style__number" aria-hidden="true">5.</span>
+                <p>
+                  <span class="bold">Fold and serve</span>: As the omelette
+                  continues to cook, carefully lift one edge and fold it over
+                  the fillings. Let it cook for another minute, then slide it
+                  onto a plate.
+                </p>
+              </li>
+              <li class="recipe__list-item recipe__list-item--numbered">
+                <span class="bold list-style list-style__number" aria-hidden="true">6.</span>
+                <p>
+                  <span class="bold">Enjoy</span>: Serve hot, with additional
+                  salt and pepper if needed.
+                </p>
+              </li>
+            </ol>
+          </article>
+          <hr>
+          <article class="recipe__section" id="nutrition">
+            <h2 class="recipe__section-heading">Nutrition</h2>
+            <p>
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <table class="recipe__table">
+              <tr class="recipe__table-row">
+                <td data-cell="nutrition type">Calories</td>
+                <td data-cell="nutrition value">277kcal</td>
+              </tr>
+              <tr class="recipe__table-row">
+                <td data-cell="nutrition type">Carbs</td>
+                <td data-cell="nutrition value">0g</td>
+              </tr>
+              <tr class="recipe__table-row">
+                <td data-cell="nutrition type">Protein</td>
+                <td data-cell="nutrition value">20g</td>
+              </tr>
+              <tr class="recipe__table-row">
+                <td data-cell="nutrition type">Fat</td>
+                <td data-cell="nutrition value">22g</td>
+              </tr>
+            </table>
+          </article>
+        </div>
+      </article>
+    </main>
+    <!-- <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </footer> -->
+  </body>
+</html>
